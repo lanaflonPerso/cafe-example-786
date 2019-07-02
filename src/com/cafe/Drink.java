@@ -1,3 +1,5 @@
+package com.cafe;
+
 import java.util.Objects;
 
 /**
