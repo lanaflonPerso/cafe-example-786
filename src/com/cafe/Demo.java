@@ -1,6 +1,7 @@
 package com.cafe;
 
 import com.cafe.storage.ListStorage;
+import com.cafe.storage.MapStorage;
 import com.cafe.storage.Storage;
 
 import java.util.List;
@@ -10,7 +11,8 @@ public class Demo
     public static void main(String[] args)
     {
         Cafe cafe = new Cafe();
-        Storage storage =  new ListStorage();
+//        Storage storage =  new ListStorage();
+        Storage storage =  new MapStorage();
 
         cafe.setStorage(storage);
 
