@@ -9,12 +9,24 @@ import java.util.Objects;
 
 public class Drink
 {
+    private long id;
+
     private String name;
 
     private double price;
 
     public Drink()
     {
+    }
+
+    public long getId()
+    {
+        return id;
+    }
+
+    public void setId(long id)
+    {
+        this.id = id;
     }
 
     public String getName()
@@ -49,19 +61,20 @@ public class Drink
             return false;
         }
         Drink drink = (Drink) o;
-        return Double.compare(drink.price, price) == 0 &&
+        return id == drink.id &&
+                Double.compare(drink.price, price) == 0 &&
                 Objects.equals(name, drink.name);
     }
 
     @Override
     public int hashCode()
     {
-        return Objects.hash(name, price);
+        return Objects.hash(id, name, price);
     }
 
     @Override
     public String toString()
     {
-        return name + " : " + price;
+        return id + ":" + name + " : " + price;
     }
 }
