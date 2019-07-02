@@ -2,7 +2,10 @@ package com.cafe.storage;
 
 import com.cafe.Drink;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class MapStorage implements Storage
 {

@@ -4,7 +4,7 @@ import com.cafe.storage.Storage;
 
 public class Cafe
 {
-    private Storage storage;
+    private Storage<Drink> storage;
 
     public Cafe() {}
 
@@ -14,6 +14,17 @@ public class Cafe
 
         drink.setName(name);
         drink.setPrice(price);
+
+        storage.store(drink);
+    }
+
+    public void createHealthyDrink(String name, double price, int calories)
+    {
+        HealthyDrink drink = new HealthyDrink();
+
+        drink.setName(name);
+        drink.setPrice(price);
+        drink.setCalories(calories);
 
         storage.store(drink);
     }

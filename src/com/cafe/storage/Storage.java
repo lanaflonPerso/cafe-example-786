@@ -1,13 +1,14 @@
 package com.cafe.storage;
 
 import com.cafe.Drink;
+
 import java.util.List;
 
-public interface Storage
+public interface Storage<D extends Drink>
 {
-    Drink store(Drink drink);
+    D store(D drink);
 
-    Drink find(String name);
+    D find(String name);
 
-    List<Drink> getAll();
+    List<D> getAll();
 }

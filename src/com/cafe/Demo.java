@@ -23,7 +23,6 @@ public class Demo
         cafe.buy("aksdksa");
 
 
-
     }
 
     public static Storage chooseStorage(String[] args)
@@ -32,7 +31,7 @@ public class Demo
         {
             return new MapStorage();
         }
-        return new ListStorage();
+        return new ListStorage<>();
     }
 
 

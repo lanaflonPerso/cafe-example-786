@@ -5,9 +5,9 @@ import com.cafe.Drink;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListStorage implements Storage
+public class ListStorage<D extends Drink> implements Storage<D>
 {
-    private List<Drink> drinkList;
+    private List<D> drinkList;
 
     private long currentId = 1;
 
@@ -18,9 +18,9 @@ public class ListStorage implements Storage
     }
 
     @Override
-    public Drink store(Drink drink)
+    public D store(D drink)
     {
-        Drink stored = drink;
+        D stored = drink;
         stored.setId(currentId++);
 
         drinkList.add(drink);
@@ -29,9 +29,9 @@ public class ListStorage implements Storage
     }
 
     @Override
-    public Drink find(String name)
+    public D find(String name)
     {
-        for (Drink drink : drinkList)
+        for (D drink : drinkList)
         {
             if (name.equals(drink.getName()))
             {
@@ -42,7 +42,7 @@ public class ListStorage implements Storage
     }
 
     @Override
-    public List<Drink> getAll()
+    public List<D> getAll()
     {
         return new ArrayList<>(drinkList);
     }
