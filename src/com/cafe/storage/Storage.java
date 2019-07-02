@@ -7,8 +7,6 @@ public interface Storage
 {
     Drink store(Drink drink);
 
-    Drink getById(long id);
-
     Drink find(String name);
 
     List<Drink> getAll();

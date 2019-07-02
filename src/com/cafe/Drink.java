@@ -17,9 +17,7 @@ public class Drink
 
     private double price;
 
-    public Drink()
-    {
-    }
+    public Drink() {}
 
     public long getId()
     {

@@ -18,6 +18,28 @@ public class Cafe
         storage.store(drink);
     }
 
+    public void buy(String name)
+    {
+        buy(name, 1);
+    }
+
+
+    public void buy(String name, int count)
+    {
+        Drink drinkToBuy = storage.find(name);
+
+        if (drinkToBuy != null && count > 0)
+        {
+            System.out.println("Bought " + name
+                    + ", total cost: " + (count * drinkToBuy.getPrice()));
+        }
+        else
+        {
+            System.out.println(name + " No such drink exists.");
+        }
+
+    }
+
     public void printMenu()
     {
         System.out.println(storage.getAll());

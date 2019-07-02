@@ -3,6 +3,8 @@ package com.cafe;
 import com.cafe.storage.ListStorage;
 import com.cafe.storage.Storage;
 
+import java.util.List;
+
 public class Demo
 {
     public static void main(String[] args)
@@ -18,6 +20,11 @@ public class Demo
         cafe.createDrink("Tea", 10.0);
 
         cafe.printMenu();
+
+        cafe.buy("Latte", 2);
+        cafe.buy("Tea");
+
+
 
     }
 

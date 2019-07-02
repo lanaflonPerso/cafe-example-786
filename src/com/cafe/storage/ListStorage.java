@@ -28,20 +28,21 @@ public class ListStorage implements Storage
     }
 
     @Override
-    public Drink getById(long id)
-    {
-        return null;
-    }
-
-    @Override
     public Drink find(String name)
     {
+        for (Drink drink : drinkList)
+        {
+            if (name.equals(drink.getName()))
+            {
+                return drink;
+            }
+        }
         return null;
     }
 
     @Override
     public List<Drink> getAll()
     {
-        return null;
+        return new ArrayList<>(drinkList);
     }
 }
