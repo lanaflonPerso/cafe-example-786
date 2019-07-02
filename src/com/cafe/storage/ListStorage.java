@@ -13,6 +13,7 @@ public class ListStorage implements Storage
 
     public ListStorage()
     {
+        System.out.println("ListStorage selected.");
         this.drinkList = new ArrayList<>();
     }
 

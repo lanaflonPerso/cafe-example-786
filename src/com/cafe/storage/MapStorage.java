@@ -12,6 +12,7 @@ public class MapStorage implements Storage
 
     public MapStorage()
     {
+        System.out.println("MapStorage selected.");
         this.storage = new HashMap<>();
 
         // ordered map
