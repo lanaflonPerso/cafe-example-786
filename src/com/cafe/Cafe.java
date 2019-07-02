@@ -42,7 +42,15 @@ public class Cafe
 
     public void printMenu()
     {
-        System.out.println(storage.getAll());
+        System.out.println("========================");
+        System.out.println("========  Menu  ========");
+        System.out.println("========================");
+        for (Drink drink : storage.getAll())
+        {
+            System.out.println(drink);
+        }
+        System.out.println("========================");
+        System.out.println();
     }
 
     public void setStorage(Storage storage)

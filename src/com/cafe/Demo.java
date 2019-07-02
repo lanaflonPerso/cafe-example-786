@@ -26,6 +26,8 @@ public class Demo
         cafe.buy("Latte", 2);
         cafe.buy("Tea");
 
+        cafe.buy("aksdksa");
+
 
 
     }
