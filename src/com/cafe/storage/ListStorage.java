@@ -9,6 +9,8 @@ public class ListStorage implements Storage
 {
     private List<Drink> drinkList;
 
+    private long currentId = 1;
+
     public ListStorage()
     {
         this.drinkList = new ArrayList<>();
@@ -17,7 +19,12 @@ public class ListStorage implements Storage
     @Override
     public Drink store(Drink drink)
     {
-        return null;
+        Drink stored = drink;
+        stored.setId(currentId++);
+
+        drinkList.add(drink);
+
+        return stored;
     }
 
     @Override
