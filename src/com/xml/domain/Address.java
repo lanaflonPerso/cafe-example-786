@@ -1,6 +1,7 @@
 package com.xml.domain;
 
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 
 @XmlRootElement
 public class Address
@@ -8,6 +9,7 @@ public class Address
     private long id;
     private String country;
     private String city;
+
     private int home;
 
     public Address()
@@ -51,6 +53,7 @@ public class Address
         this.city = city;
     }
 
+    @XmlTransient
     public int getHome()
     {
         return home;

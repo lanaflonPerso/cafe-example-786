@@ -15,20 +15,28 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
+// USE JDK 8 only, for newer versions available as external library
+
+// https://docs.oracle.com/javase/tutorial/jaxb/intro/index.html
+// https://javarush.ru/quests/lectures/questcollections.level03.lecture07
+// https://javarush.ru/quests/lectures/questcollections.level03.lecture09
+
+
+
 public class Demo
 {
     public static void main(String[] args) throws Exception
     {
 
 
-//        convertAddressToXml();
+        convertAddressToXml();
 //        convertXmlStringToObject();
 //        convertXmlFileToDogBox();
 
 //        convertDogToXml();
 //        convertDogBoxToXml();
 
-        readDataTheInternet("http://www.google.com");
+//        readDataTheInternet("http://www.google.com");
     }
 
     private static void convertXmlStringToObject() throws JAXBException
