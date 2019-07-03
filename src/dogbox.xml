@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dogBox>
+    <dog id="1000" dog-name="Rex">
+        <address>
+            <city>Wroclaw</city>
+            <country>Poland</country>
+            <home>5</home>
+            <id>100</id>
+        </address>
+        <age>18</age>
+        <color>BLACK</color>
+    </dog>
+    <dog id="1001" dog-name="Linda">
+        <address>
+            <city>Wroclaw</city>
+            <country>Poland</country>
+            <home>5</home>
+            <id>100</id>
+        </address>
+        <age>16</age>
+        <color>WHITE</color>
+    </dog>
+</dogBox>
