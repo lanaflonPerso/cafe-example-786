@@ -1,11 +1,10 @@
 package com.xml.domain;
 
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlTransient;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 
 @XmlRootElement
 @XmlType(propOrder = {"id", "country", "city"})
+//@XmlAccessorOrder(value = XmlAccessOrder.ALPHABETICAL )
 public class Address
 {
     private long id;
