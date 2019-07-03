@@ -2,8 +2,10 @@ package com.xml.domain;
 
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
+import javax.xml.bind.annotation.XmlType;
 
 @XmlRootElement
+@XmlType(propOrder = {"id", "country", "city"})
 public class Address
 {
     private long id;
